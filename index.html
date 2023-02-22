@@ -11,7 +11,7 @@
        
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crete+Round:ital@1&display=swap" rel="stylesheet">            
+            <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crete+Round:ital@1&display=swap&" rel="stylesheet">            
     </head>
     <style>
         body{
@@ -19,10 +19,14 @@
             color: #E7F6F2;
             font-family: 'Crete Round', serif;
         }
+        li{
+            display: inline;
+            padding-right: 15px;
+        }
     </style>
     <body class="dark_mode">
         <div class="container" style="min-height:100vh;">
-            <div class="row" style="min-height:100vh;">
+            <div class="row" style="min-height:95vh;">
                 <div class="col" style="display:flex;flex-direction:column;justify-content:center;" >
                     <div style="display:flex;flex-direction:column;align-items:center;">
                         <div class="image">
@@ -31,22 +35,48 @@
                         <h1 class="display-3">John Bean</h1>
                         <p class="mb-0">Computer & Data Science</p>
                         <p class="mt-0">Team & Community Building</p>
+                        <ul >
+                            <li><a target="_blank" href="https://github.com/jbeans0312"><img src="images/gitlogo.png" class="icon"></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/john-t-bean/"><img src="images/linkedinlogo.png" class="icon"></a></li>
+                        </ul>
                         <hr class="mt-0" style="height:2px; width:350px; border-width:0; color:#E7F6F2; background-color:#E7F6F2">
-                        <div style="text-align:center;max-width:350px">
+                        <div style="text-align:center;min-width:400px;max-width:500px">
                             <p>Hey! Thank you for visiting my website! I am currently an Honors Computer
                                 Science major at The University of Delaware concentrating in Data Science.
+                                I want to present data in an accessible and attractive format.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container" style="min-height:100vh;">
-            <div class="row" style="min-height:100vh;">
+        <div class="container center" style="min-height:100vh;">
+            <div class="row my-5 mb-5" style="min-height:100vh;">
+                <div class="mb-4 align-items-center" style="text-align:center;">
+                    <h1 class="display-2">Portfolio</h1>
+                </div>
+                
                 <div class="deck">
-                    <div class="card mt-3 mx-3">a</div>
-                    <div class="card mt-3 mx-3">b</div>
-                    <div class="card mt-3 mx-3">c</div>
+                    <div class="ccard mt-3 mx-3">
+                        <h3 class="mt-2" style="font-family: 'Abril Fatface', cursive;">UDCIS Scheduler</h3>
+                        <hr class="mt-0" style="height:2px; width: 85%; border-width:0; color:#E7F6F2; background-color:#E7F6F2">
+                        <img src="images/plannerhomepage.png" style="max-width:80%">
+                        <p class="mt-2">
+                            <b>ReactTS</b> website made to help UD Computer Science students plan their college career.
+                            Students can create multiple plans where they can add and structure classes across each
+                            semester. Made in a group using <b>Agile</b> framework.
+                        </p>
+                    </div>
+                    <div class="ccard mt-3 mx-3">
+                        <h3 class="mt-2" style="font-family: 'Abril Fatface', cursive;">Serial Port Monitor</h3>
+                        <hr class="mt-0" style="height:2px; width: 85%; border-width:0; color:#E7F6F2; background-color:#E7F6F2">
+                    </div>
+                    <div class="ccard mt-3 mx-3">
+                        <h3 class="mt-2" style="font-family: 'Abril Fatface', cursive;">Analysis of Radiolaria</h3>
+                        <hr class="mt-0" style="height:2px; width: 85%; border-width:0; color:#E7F6F2; background-color:#E7F6F2">
+                    </div>
+                    <div class="ccard mt-3 mx-3">c</div>
+                    <div class="ccard mt-3 mx-3">c</div>
                 </div>
             </div>
         </div>

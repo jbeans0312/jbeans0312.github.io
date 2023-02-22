@@ -18,6 +18,16 @@ h1{
     align-items: center;
 }
 
+.icon{
+    filter: invert(95%) sepia(14%) saturate(133%) hue-rotate(110deg) brightness(100%) contrast(94%);
+    width:50px;
+    height:50px;
+}
+
+.icon:hover{
+    filter: invert(91%) sepia(17%) saturate(275%) hue-rotate(112deg) brightness(95%) contrast(93%);
+}
+
 .centerdiv{
     display: flex;
     align-items: center;
@@ -29,9 +39,18 @@ h1{
     flex-flow: row wrap;
     justify-content: center;
 }
-.card{
-    background-color: #E7F6F2;
+.ccard{
+    background-color: #242A2A;
+    border-color: #E7F6F2;
+    border-style: solid;
+    border-width: 2px solid;
+    border-radius: 5px;
     width: 400px;
     min-height:500px;
     max-height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
 }
