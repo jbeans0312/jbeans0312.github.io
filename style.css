@@ -59,6 +59,10 @@ h1{
     padding: 15px;
 }
 
+.ptext{
+    font-family: 'Crete Round', serif;
+}
+
 .playlist{
     display: flex;
     flex-direction: column;
