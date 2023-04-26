@@ -34,9 +34,7 @@ h1{
     justify-content: center;
 }
 
-.a:hover{
-    color: #C2E8DE;
-}
+
 
 .deck{
     display: flex;
@@ -74,4 +72,12 @@ h1{
     max-width: 550px;
     padding: 10px;
     padding-bottom: 5px;
+}
+
+a{
+    color: #E7F6F2;
+}
+
+a:hover{
+    color: #C2E8DE;
 }
