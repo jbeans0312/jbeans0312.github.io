@@ -1,14 +1,18 @@
 @font-face {
-    font-family: 'Decoder'; 
-    src: url("/fonts/DECODER_.TTF") format("truetype");
+    font-family: 'decoder';
+    src: url('fonts/decoder_-webfont.woff') format('woff2'),
+         url('fonts/decoder_-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 h1{
-    font-family: 'Decoder';
+    font-family: 'decoder';
 }
 
 h3{
-    font-family: 'Decoder';
+    font-family: 'decoder';
 }
 
 .line{
