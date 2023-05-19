@@ -4,7 +4,14 @@
          url('fonts/decoder_-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'crete_rounditalic';
+    src: url('fonts/creteround-italic-webfont.woff2') format('woff2'),
+         url('fonts/creteround-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1{
@@ -30,6 +37,11 @@ h3{
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+    
 
 .icon{
     filter: invert(95%) sepia(14%) saturate(133%) hue-rotate(110deg) brightness(100%) contrast(94%);
@@ -67,10 +79,6 @@ h3{
     align-items: center;
     text-align: center;
     padding: 15px;
-}
-
-.ptext{
-    font-family: 'Crete Round', serif;
 }
 
 .playlist{
