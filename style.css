@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'Decoder'; 
+    src: url("/fonts/DECODER_.TTF") format("truetype");
+}
+
 h1{
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Decoder';
+}
+
+h3{
+    font-family: 'Decoder';
 }
 
 .line{
@@ -9,7 +18,7 @@ h1{
 }
 
 .image{
-    background-color: #E7F6F2;
+    background-color: inherit;
     border-radius: 50%;
     height: 250px;
     width: 250px;
@@ -34,13 +43,12 @@ h1{
     justify-content: center;
 }
 
-
-
 .deck{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
+
 .ccard{
     background-color: #242A2A;
     border-color: #E7F6F2;
