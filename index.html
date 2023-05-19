@@ -27,15 +27,25 @@
             font-weight: normal;
             font-style: normal;
         }
+
+        .back{
+            display: none;
+            position: fixed;
+            bottom: 1px;
+            right: 1px;
+            z-index: 99;
+            padding: 15px;
+            color:#afded1;
+        }
     </style>
     <body class="dark_mode">
+        <a id="top"></a>
         <div class="container" style="min-height:100vh;">
             <div class="row" style="min-height:95vh;">
                 <div class="col" style="display:flex;flex-direction:column;justify-content:center;" >
                     <div style="display:flex;flex-direction:column;align-items:center;">
-                        <div class="image mt-5 mb-4">
+                        <div class="image mt-5 mb-4" style="background-color:inherit;">
                             <img style="position:absolute; z-index:1; filter: invert(95%) sepia(14%) saturate(133%) hue-rotate(110deg) brightness(100%) contrast(94%);"src="images/globologo.png"></img>
-                            <img src="images/me.jpg" style="z-index:2;max-height:95%;max-width:95%;border-radius:50%;"></img>
                         </div>
                         <h1 class="display-3">john bean</h1>
                         <p class="mt-0">
@@ -46,18 +56,11 @@
                             <li><a target="_blank" href="https://github.com/jbeans0312"><img src="images/gitlogo.png" class="icon"></a></li>
                             <li><a target="_blank" href="https://www.linkedin.com/in/john-t-bean/"><img src="images/linkedinlogo.png" class="icon"></a></li>
                         </ul>
-                        <hr class="mt-0" style="height:2px; width:350px; border-width:0; color:#E7F6F2; background-color:#E7F6F2">
-                        <div style="text-align:center;min-width:400px;max-width:500px">
-                            <p class="ptext">thanks for stopping by  i'm currently an undergrad studying data science, and
-                                contributing to machine learning research.
-                            </p>
-                        </div>
-                        <div class="mt-5"style="text-align:center;min-width:400px;max-width:500px">
-                            <p class="mb-0">
-                                scroll for more!
-                            </p>
+                        <div class="mt-2"style="text-align:center;min-width:400px;max-width:500px">
                             <p>
-                                ▽ 
+                                <a style="text-decoration:none;"href="#about">about</a> |
+                                <a style="text-decoration:none;"href="#projects">projects</a> | 
+                                <a style="text-decoration:none;"href="#more">more</a>
                             </p>
                         </div>
                     </div>
@@ -66,10 +69,28 @@
         </div>
         <div class="container center" style="min-height:100vh;">
             <div class="row my-5 mb-5" style="min-height:100vh;">
+                <a id="about"></a>
+                <div class="mb-4 align-items-center" style="text-align:center;">
+                    <h1 class="display-2">❃ about me</h1>
+                    <div class="deck">
+                        <div class="image">
+                            <img style="width:245px;height:245px;border-radius:50%;"src="images/me.jpg"></img>
+                        </div>
+                        <div>
+                            <p>
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container center" style="min-height:100vh;">
+            <div class="row my-5 mb-5" style="min-height:100vh;">
+                <a id="projects"></a>
                 <div class="mb-4 align-items-center" style="text-align:center;">
                     <h1 class="display-2">☰ projects</h1>
                 </div>
-                
                 <div class="deck">
                     <div class="ccard mt-3 mx-3">
                         <h3 class="mt-2" >UDCIS Scheduler</h3>
@@ -139,7 +160,8 @@
         </div>
         <div class="container center" style="min-height:100vh;">
             <div class="mb-4 align-items-center" style="text-align:center;">
-                <h1 class="display-2">★ more about me!</h1>
+                <a id="more"></a>
+                <h1 class="display-2">★ more</h1>
                 <div class="col" style="display:flex;flex-direction:column;justify-content:center;align-items:center">
                     <hr class="mt-0" style="height:2px; width:350px; border-width:0; color:#E7F6F2; background-color:#E7F6F2">
                     <h1 class="display-5 mb-4">♫ playlists</h1>
@@ -188,6 +210,18 @@
                 </div>       
             </div>
         </div>
-        
+        <a id="backtotop" style="text-decoration:none;" class="back" href="#top"><strong>△</strong></a>
+        <script>
+            let back = document.getElementById("backtotop");
+
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    back.style.display = "block";
+                } else {
+                     back.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>
