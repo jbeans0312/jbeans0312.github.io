@@ -11,7 +11,7 @@
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/terminal.css' rel='stylesheet'>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
-
+        <script src="js/fact.js"></script>
     </head>
     <style>
         body{
@@ -88,6 +88,8 @@
                                 the University of Delaware, and contributing to 
                                 machine learning research.
                             </p>
+                            <di</div>
+                            <p id='fact' style="max-width:450px;"></p>
                         </div>
                     </div>
                 </div>
@@ -170,8 +172,15 @@
             <div class="mb-4 align-items-center" style="text-align:center;">
                 <a id="more"></a>
                 <h1 class="display-2">★ more</h1>
+                <div class="mt-2 align-items-center"style="display:flex;flex-direction:row;justify-content:center;">
+                    <p>
+                        <a style="text-decoration:none;"href="#playlists">playlists</a> |
+                        <a style="text-decoration:none;"href="#places">places</a>
+                    </p>
+                </div>
                 <div class="col" style="display:flex;flex-direction:column;justify-content:center;align-items:center">
                     <hr class="mt-0" style="height:2px; width:350px; border-width:0; color:#E7F6F2; background-color:#E7F6F2">
+                    <a id="playlists"></a>
                     <h1 class="display-5 mb-4">♫ playlists</h1>
                     <div class="deck">
                         <div class="playlist mt-2 mx-2">
@@ -215,7 +224,14 @@
                             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/48JOvkyKtd2yROAN5Nfx3J?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </div>
-                </div>       
+                </div>   
+                <div class="col" style="display:flex;flex-direction:column;justify-content:center;align-items:center">
+                    <a id="places"></a>
+                    <h1 class="display-5 mb-4">⛱ places</h1>
+                    <div class="deck">
+
+                    </div>
+                </div>    
             </div>
         </div>
         <a id="backtotop" style="text-decoration:none;" class="back" href="#top"><strong>△</strong></a>
